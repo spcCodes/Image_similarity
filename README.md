@@ -146,6 +146,7 @@ The output is as follows:
 
 <div style="text-align: center"><img src="images/Similar_images2.jpg" width="700"/></div>
 
+* As we can see the first image is the query image , while the rest 3 images are the most similar ones that could be found in the **data_similarity** folder.
 
 Output 2
 ========
@@ -158,5 +159,21 @@ The output is as follows:
 
 <div style="text-align: center"><img src="images/Similar_images1.jpg" width="700"/></div>
 
+* As we can see the first image is the query image , while the rest 3 images are the most similar ones that could be found in the **data_similarity** folder.
 
+
+
+<a name="conclusion"></a>
+## Conclusion
+
+We have succesfully implemented a project that could find the most similar images from the given dataset. One of the major merits in trying out this project was it was able to find similar images without using any deep learning models which is usually data hungry and large. However the search time is moderate right now which will tend to increase once the dataset size increases. Thus we also have to look into alternate image searching techniques probably a deep learning module might come in handy.
+
+<a name="future"></a>
+## Future Work
+
+-  Have to create a REST apI so that it could be deployed over the web
+-  Create GUI for web based aplication.
+-  Try out any deep learning based similarity approach as the current one is taking moderate time
+-  Get more dataset for training and remove the duplicate images.
+-  Dockerize so that it can be productionised
 
