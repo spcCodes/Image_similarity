@@ -35,3 +35,30 @@ Steps 1 and 2 involves the following:
 We can then move on to performing a search (Steps 3 and 4):
 
 <div style="text-align: center"><img src="images/searching.jpg" width="700"/></div>
+
+<a name="project_str"></a>
+## Project Structure
+
+The entire project structure is as follows:
+```
+├── data
+|__ images1.jpg
+|__ images2.jpg
+|__ .....
+├── images
+│   ├── preprocessing_and_indexing.jpg
+│   └── searching.jpg
+├── queries
+│   ├── Classic_Mid-Rise_Skinny_Jeansimg_00000050.jpg
+│   └── Cropped_Trench_Coatimg_00000004.jpg
+├── src
+│   ├── colordescriptor.py
+│   └── searcher.py
+├── README.md
+├── Similar_images1.jpg
+├── Similar_images2.jpg
+├── index.py
+├── index1.csv
+├── name_change.py
+└── search.py
+```
