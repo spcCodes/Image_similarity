@@ -151,9 +151,9 @@ The output is as follows:
 Output 2
 ========
 
-'''
+```
 python search.py --index index1.csv --query queries/Cropped_Trench_Coatimg_00000004.jpg --result-path data_similarity
-'''
+```
 The output is as follows:
 
 
