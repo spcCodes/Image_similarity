@@ -45,6 +45,7 @@ for (score, resultID) in results:
 
 
 numpy_horizontal_concat = np.concatenate((query, results_arr[0],results_arr[1],results_arr[2]), axis=1)
-cv2.imshow('stack',numpy_horizontal_concat)
+#cv2.imshow('stack',numpy_horizontal_concat)
+cv2.imwrite("Similar_images2.jpg",numpy_horizontal_concat)
 #cv2.imshow("Result", result)
 cv2.waitKey(0)
