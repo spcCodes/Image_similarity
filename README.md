@@ -31,3 +31,7 @@ Any Content-Based Image Retrieval System we are building, they all can be boiled
 Steps 1 and 2 involves the following:
 
 <div style="text-align: center"><img src="images/preprocessing_and_indexing.jpg" width="700"/></div>
+
+We can then move on to performing a search (Steps 3 and 4):
+
+<div style="text-align: center"><img src="images/searching.jpg" width="700"/></div>
