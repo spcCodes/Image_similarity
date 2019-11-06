@@ -115,8 +115,19 @@ python index.py --dataset dataset --index index1.csv
 
 This will save a index1.csv file containing all the image histogram features of all the images.
 
+**Step 4: Performing a Search**
 
+ Now that we’ve extracted features from our dataset, we need a method to compare these features for similarity. That’s where we have create a class that will define the actual similarity metric between two images. This is the **searcher.py** file which contains the class of searching method which uses chi-square similarity.
+ 
+ Finally we have created a **search.py** file which will search all the related similar images from **data_similarity** folder and returns out with the 3 most similar products.
+ 
+ The scripts to run the search is as follows:
+ 
+ ```
+ python search.py --index index1.csv --query queries/Classic_Mid-Rise_Skinny_Jeansimg_00000050.jpg --result-path data_similarity
 
+ ```
+ 
 
 
 
