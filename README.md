@@ -55,10 +55,72 @@ The entire project structure is as follows:
 │   ├── colordescriptor.py
 │   └── searcher.py
 ├── README.md
-├── Similar_images1.jpg
-├── Similar_images2.jpg
 ├── index.py
 ├── index1.csv
 ├── name_change.py
 └── search.py
 ```
+
+As we see from the project structure :
+
+a) all the class related to Histogram descriptor and Searcher are kept in **src** folder. 
+
+b)The test images are kept in **queries** folder. 
+
+c) All the csv file which contains the features are found in **index1.csv**
+
+d) The features extraction script is in **index.py** file
+
+<a name="data"></a>
+## Dataset
+
+The dataset for this challenge was given to us which can be downloaded from the  **[dataset](https://drive.google.com/open?id=1_Qww0NbYJOH17IiTr7bgXWQTQTFD-V9R)** and kept in **data_similarity** file
+
+The dataset contains 3050 images in total.Since it doesnot require any deep learning based module training , thus there was no need to divide the dataset into training and testing sets.
+
+<a name="project"></a>
+## Project Execution Steps 
+
+**Step 1. Clone the entire project**
+
+* The entire project needs to be cloned into your machine. Once it is cloned we go to that project structure and type in terminal as:
+
+```
+export PYTHONPATH=.
+```
+* We need to install the dependencies required for this project. The dependencies are given in **requirements.txt** file 
+
+
+**Step 2: Defining our Image Descriptor**
+
+We need to define our image descriptor which will find out the image features and save it in corresponding csv file for all the images in the **data_similarity** directory
+
+Our image descriptor will be a 3D color histogram in the HSV color space (Hue, Saturation, Value).
+
+For our apparel photo image search engine, we’ll be utilizing a 3D color histogram in the HSV color space with 8 bins for the Hue channel, 12 bins for the saturation channel, and 3 bins for the value channel, yielding a total feature vector of dimension 8 x 12 x 3 = 288.
+
+This means that for every image in our dataset, no matter if the image is 36 x 36 pixels or 2000 x 1800 pixels, all images will be abstractly represented and quantified using only a list of 288 floating point numbers.
+
+Our color histogram is normalized on Line 61 or 65 (depending on OpenCV version) to obtain scale invariance. This means that if we computed a color histogram for two identical images, except that one was 50% larger than the other, our color histograms would be (nearly) identical.
+
+**Step 3: Extracting Features from Our Dataset**
+
+Now that we have our image descriptor defined, we can move on to Step 2, and extract  features (i.e. color histograms) from each image in our dataset. 
+
+The script to extract the features from our image  dataset is as follows:
+
+```
+python index.py --dataset dataset --index index1.csv
+```
+
+This will save a index1.csv file containing all the image histogram features of all the images.
+
+
+
+
+
+
+
+
+
+
