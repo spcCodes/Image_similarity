@@ -27,3 +27,7 @@ Any Content-Based Image Retrieval System we are building, they all can be boiled
 (1) extract features from this query image and then 
 
 (2) apply our similarity function to compare the query features to the features already indexed. From there, we simply return the most relevant results according to our similarity function.
+
+Steps 1 and 2 involves the following:
+
+<div style="text-align: center"><img src="images/preprocessing_and_indexing.jpg" width="300"/></div>
