@@ -138,9 +138,9 @@ Some of the results after running the script is as follows:
 
 Output 1 
 ========
-'''
+```
 python search.py --index index1.csv --query queries/Classic_Mid-Rise_Skinny_Jeansimg_00000050.jpg --result-path data_similarity
-'''
+```
 
 The output is as follows:
 
