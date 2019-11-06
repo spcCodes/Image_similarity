@@ -6,7 +6,7 @@ The objective of the project is that given a query image, it will find 3 most si
 * [Project Structure](#project_str)
 * [Dataset](#data)
 * [Project Execution Steps](#project)
-* [Flask App](#flask)
+* [Result Similar Images](#similar)
 * [Conclusion](#conclusion)
 * [Future Work](#future)
 
@@ -129,9 +129,34 @@ This will save a index1.csv file containing all the image histogram features of 
  ```
  
 
+* As we can see the images for testing are kept in queries folder. To test it for varying images , you can change the image name accordingly in the terminal. In case you want to test it for your test image, copy the image inside examples folder and then run the scipt changing the image name 
+
+<a name="similar"></a>
+## Result Similar Images
+
+Some of the results after running the script is as follows:
+
+Output 1 
+========
+'''
+python search.py --index index1.csv --query queries/Classic_Mid-Rise_Skinny_Jeansimg_00000050.jpg --result-path data_similarity
+'''
+
+The output is as follows:
+
+<div style="text-align: center"><img src="images/Similar_images2.jpg" width="300"/></div>
 
 
+Output 2
+========
 
+'''
+python search.py --index index1.csv --query queries/Cropped_Trench_Coatimg_00000004.jpg --result-path data_similarity
+'''
+The output is as follows:
+
+
+<div style="text-align: center"><img src="images/Similar_images1.jpg" width="300"/></div>
 
 
 
