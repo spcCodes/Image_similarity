@@ -144,7 +144,7 @@ python search.py --index index1.csv --query queries/Classic_Mid-Rise_Skinny_Jean
 
 The output is as follows:
 
-<div style="text-align: center"><img src="images/Similar_images2.jpg" width="300"/></div>
+<div style="text-align: center"><img src="images/Similar_images2.jpg" width="700"/></div>
 
 
 Output 2
@@ -156,7 +156,7 @@ python search.py --index index1.csv --query queries/Cropped_Trench_Coatimg_00000
 The output is as follows:
 
 
-<div style="text-align: center"><img src="images/Similar_images1.jpg" width="300"/></div>
+<div style="text-align: center"><img src="images/Similar_images1.jpg" width="700"/></div>
 
 
 
