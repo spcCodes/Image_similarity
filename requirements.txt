@@ -1,5 +1,5 @@
 flask
-numpy==1.15.4
+numpy==1.22.0
 keras==2.1.2
 tensorflow==1.13
 opencv-python
